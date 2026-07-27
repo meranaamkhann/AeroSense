@@ -1,16 +1,3 @@
-"""
-Air Quality Prediction API
----------------------------
-A small Flask API that serves AQI (Air Quality Index) predictions from a
-pre-trained Random Forest model, plus the static landing page UI.
-
-Endpoints:
-    GET  /          -> serves the landing page (static/index.html)
-    GET  /api        -> basic service info (JSON)
-    GET  /health     -> health check (used by deployment platforms)
-    POST /predict    -> predict AQI from pollutant readings
-"""
-
 import logging
 import os
 import pickle
@@ -88,7 +75,6 @@ def predict():
     if not isinstance(data, dict):
         return jsonify({"error": "Request body must be a JSON object"}), 400
 
-    # Check every required feature is present
     missing_fields = [f for f in FEATURE_ORDER if f not in data]
     if missing_fields:
         return jsonify({
@@ -97,7 +83,6 @@ def predict():
             "required_fields": FEATURE_ORDER,
         }), 400
 
-    # Check every value is numeric
     values = []
     invalid_fields = []
     for feature in FEATURE_ORDER:
