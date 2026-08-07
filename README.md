@@ -1,4 +1,8 @@
 # Air Quality Index (AQI) Prediction
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Flask](https://img.shields.io/badge/Flask-3.0-black)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-Random%20Forest-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Predicts India's Air Quality Index (AQI) from pollutant concentrations using a
 Random Forest Regressor, served through a Flask REST API.
@@ -9,6 +13,43 @@ Random Forest Regressor, served through a Flask REST API.
 - **Model**: Random Forest Regressor (scikit-learn), compared against a Linear Regression baseline
 - **Serving**: Flask API with input validation, structured error responses, and a health-check endpoint
 - **Notebook**: `notebooks/analysis.ipynb` documents the full, executed training and evaluation workflow
+---
+
+🌐 **Live Demo:** https://air-quality-prediction-sibbus.vercel.app/
+
+⚡ **Prediction API:** https://your-backend-url.onrender.com/predict
+---
+# Screenshots
+
+## Landing Page
+
+<img src="images/landing.png" width="100%">
+
+---
+
+## ML Pipeline
+
+<img src="images/pipeline.png" width="100%">
+
+---
+
+## Live Prediction
+
+<img src="images/prediction.png" width="100%">
+
+---
+
+## Model Performance
+
+<img src="images/performance.png" width="100%">
+
+---
+
+## Theory
+
+<img src="images/theory.png" width="100%">
+
+--- 
 
 ## Project Structure
 
