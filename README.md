@@ -17,7 +17,6 @@ Random Forest Regressor, served through a Flask REST API.
 
 🌐 **Live Demo:** https://air-quality-prediction-sibbus.vercel.app/
 
-⚡ **Prediction API:** https://your-backend-url.onrender.com/predict
 ---
 # Screenshots
 
