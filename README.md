@@ -7,12 +7,17 @@
 Predicts India's Air Quality Index (AQI) from pollutant concentrations using a
 Random Forest Regressor, served through a Flask REST API.
 
-## Overview
+---
 
-- **Data**: Historical pollutant readings for 26 Indian cities (2015–2020)
-- **Model**: Random Forest Regressor (scikit-learn), compared against a Linear Regression baseline
-- **Serving**: Flask API with input validation, structured error responses, and a health-check endpoint
-- **Notebook**: `notebooks/analysis.ipynb` documents the full, executed training and evaluation workflow
+## Features
+
+- Predict AQI using six pollutant values
+- Random Forest Regressor trained on historical pollution data
+- Interactive web interface
+- Flask REST API
+- Feature importance visualization
+- Performance metrics dashboard
+- Responsive UI
 ---
 
 🌐 **Live Demo:** https://air-quality-prediction-sibbus.vercel.app/
